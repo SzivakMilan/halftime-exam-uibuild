@@ -6,7 +6,6 @@ document.querySelector("#root").insertAdjacentHTML("beforeend",`
 
             <textarea placeholder="Megjegyzes"></textarea>
             
-            <button>Mentes</button>
             <div>
                 <input type="checkbox">
                 <p>Elolvastam es elfogadom az adatkezelesi tajekoztatot.</p>
@@ -16,5 +15,8 @@ document.querySelector("#root").insertAdjacentHTML("beforeend",`
                 <input type="checkbox">
                 <p>Szeretnek hirlevelet kapni.</p>
             </div>
+
+            <button>Mentes</button>
         </form>
+        
 `)

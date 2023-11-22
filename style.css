@@ -4,7 +4,7 @@
 
     box-sizing: border-box;
 
-    font-family: inherit;
+    font-family: inherit ;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
     background-color: #c0ebf9;
 }
 
-form {
+form{
     max-width: 600px;
 
 
@@ -27,10 +27,26 @@ form {
     font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+    font-size: 24px;
+    color: #467745;
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    font-family: inherit;
+    text-align: center;
+}
+
 input, textarea {
     font-size: 16px;
-    font-weight: 500;
-    color: #467745;
+        font-weight: 500;
+        color: #467745;
+        width: 600px;
+        border: 0;
+
 }
 
 input {
@@ -43,30 +59,68 @@ form textarea {
     padding: 20px;
 }
 
-h1 {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
+textarea::placeholder {
     color: #467745;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
-button{
+input::placeholder {
+    color: #467745;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+form div {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    color: rgb(77, 114, 77);
+    padding-left: 70px;
+    border: 0;
+}
+
+form div input {
+    width: 20px;
+    height: 20px;
+}
+
+
+button {
     font-size: 21px;
     font-weight: bold;
     color: #c0ebf9;
     background-color: #467745;
     max-width: 280px;
-    min-width: 200px;
+    width: 250px;
     height: 80px;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0,2em;
+    letter-spacing: 0.2em;
     border: 0;
     margin: 0 auto;
 }
 
+@media (max-width: 640px) {
+    input[type="text"],
+    textarea {
+      width: calc(100% - 40px);
+      margin-left: 20px;
+    }
+  }
 
+  @media (max-width: 640px) {
+    input[type="checkbox"] + label {
+      margin-left: 20px;
+    }
+  }
 
+  @media only screen and (max-width: 640px) {
+    h1 {
+        text-align: left;
+        margin-left: 20px;
+    }
+  }
 
 
 
